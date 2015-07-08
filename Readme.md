@@ -1,3 +1,22 @@
+To update/re-install (on slack.midonet.org):
+```
+# change to root user
+sudo su -
+# pull updates from GitHub
+cd ~/slackin
+git pull
+# link the package/module
+cd ~
+npm link slackin
+# translate ES6 to ES5
+cd slackin
+make
+# install the package/module (globally)
+cd ~
+npm install -g slackin
+# restart the daemon
+systemctl restart slackin
+```
 
 # slackin
 
